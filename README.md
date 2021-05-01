@@ -5,6 +5,11 @@
 ## Assignment
 See [ASSIGNMENT.md](./ASSIGNMENT.md)
 
+## Install dependencies
+```
+npm i
+```
+
 ## Launch
 
 ```
