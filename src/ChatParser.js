@@ -1,10 +1,16 @@
 /**
+ * Message definition
+ * @typedef {Object} Message
+ * @property {string} date       "14:24:32"
+ * @property {string} mention    "14:24:32 Customer : "
+ * @property {string} sentence   "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n"
+ * @property {string} type       "Customer"
+ */
+
+/**
  * Main regex for message info extraction
- * Named groups example:
-  * - date:       "14:24:32"
-  * - mention:    "14:24:32 Customer : "
-  * - sentence:   "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n"
-  * - type:       "Customer"
+ * Named groups example
+ * @see Message
  */
 const MAIN_CHAT_REGEX = /(?<mention>(?<date>(?:[01]\d|2[0-3]):(?:[0-5]\d):(?:[0-5]\d)) (?<type>Agent|Customer|[.' \w]+) (: )?)(?<sentence>(.*.\n?))/gm
 const CHUNK_INLINE_REGEX = /(?<mention>(?<date>(?:[01]\d|2[0-3]):(?:[0-5]\d):(?:[0-5]\d)) [\w ]*:? ?)/g
@@ -64,9 +70,9 @@ class ChatParser {
    * Core function of ChatParser
    * 1. Split raw text in coherent chunks of single messages
    * 2. Extract as best as it can semi-structured information from each raw message
-   * 3. Returns an array of message info as sorted as they originally were
+   * 3. Returns an array of Message as sorted as they originally were
    * @param {string} text
-   * @returns {object[]}
+   * @returns {Message[]}
    */
   extract(text) {
     let match
