@@ -19,7 +19,7 @@ npm run dev
 ## Test
 
 ```
-npm run test
+npm test
 ```
 
 ## Debug (VSCode)
