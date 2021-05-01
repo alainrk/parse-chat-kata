@@ -1,0 +1,33 @@
+{
+  "name": "parse-chat-kata",
+  "version": "1.0.0",
+  "description": "Kata for parsing chat - Wonderflow",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alainrk/parse-chat-kata.git"
+  },
+  "keywords": [
+    "kata",
+    "parsing",
+    "chat"
+  ],
+  "author": "Alain Di Chiappari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alainrk/parse-chat-kata/issues"
+  },
+  "homepage": "https://github.com/alainrk/parse-chat-kata#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chalk": "^4.1.1",
+    "mocha": "^8.3.2"
+  }
+}
