@@ -18,7 +18,9 @@ npm run test
 ## Debug (VSCode)
 
 - Hit F5
+
 or
+
 - Go to "Run and Debug" Section
 - Choose "Mocha Debug" from the dropdown
 - Hit "Run"
