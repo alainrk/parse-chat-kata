@@ -1,5 +1,8 @@
 # Chat Parser
 
+[![Actions Status](https://github.com/alainrk/parse-chat-kata/workflows/Node.js%20CI/badge.svg)](https://github.com/alainrk/parse-chat-kata/actions)
+
+https://github.com/alainrk/parse-chat-kata/tree/master/.github/workflows
 ## Assignment
 See [ASSIGNMENT.md](./ASSIGNMENT.md)
 
