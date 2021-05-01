@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "dev": "node index.js"
+    "dev": "node src/index.js"
   },
   "repository": {
     "type": "git",

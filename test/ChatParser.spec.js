@@ -1,5 +1,5 @@
 const { expect } = require('chai')
-const ChatParser = require('../ChatParser.js')
+const ChatParser = require('../src/ChatParser.js')
 
 describe('ChatParser', function() {
   let chatParser
